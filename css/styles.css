@@ -175,6 +175,10 @@ body {
   background-color: var(--active-color);
   cursor: pointer;
 }
+.current {
+  color: var(--white-color);
+  background-color: var(--active-color);
+}
 
 /* зображення */
 .project-images {
