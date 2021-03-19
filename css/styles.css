@@ -14,6 +14,7 @@ html {
   --footer-color: rgba(47, 48, 58, 1);
   --active-color: rgba(33, 150, 243, 1);
   --grid-item: 3;
+  --primary-margin: 30px;
 }
 
 body {
@@ -141,8 +142,7 @@ header {
   height: 120px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
-
+  margin-bottom: var(--primary-margin);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -178,10 +178,13 @@ header {
 .features-lists {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100%-30px * 4) / 4);
+  --grid-item: 4;
+  flex-basis: calc(
+    (100%- var(--primary-margin) * var(--grid-item)) / var(--grid-item)
+  );
 }
 .features-lists:not(:first-child) {
-  margin-left: 30px;
+  margin-left: var(--primary-margin);
 }
 
 .features-titles {
@@ -217,14 +220,16 @@ header {
 .our-works {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--primary-margin));
+  margin-top: calc(-1 * var(--primary-margin));
 }
 .works-items {
   display: block;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: var(--primary-margin);
+  margin-top: var(--primary-margin);
+  flex-basis: calc(
+    (100% - var(--primary-margin) * var(--grid-item)) / var(--grid-item)
+  );
 }
 
 /* наша команда */
@@ -236,20 +241,22 @@ header {
   display: flex;
   background-color: var(--white-color);
   flex-wrap: wrap;
-  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  flex-basis: calc(
+    (100% - var(--primary-margin) * var(--grid-item)) / var(--grid-item)
+  );
 }
 .team-lists:not(:first-child) {
-  margin-left: 30px;
+  margin-left: var(--primary-margin);
 }
 .team-items {
   display: flex;
   flex-wrap: wrap;
   --grid-item: 4;
-  margin-right: -30px;
+  margin-right: calc(-1 * var(--primary-margin));
 }
 .titles-team {
   color: var(--titles-text-color);
-  margin-top: 30px;
+  margin-top: var(--primary-margin);
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -260,7 +267,7 @@ header {
 .team-person .text {
   font-size: 16px;
   line-height: 1.19;
-  padding-bottom: 30px;
+  padding-bottom: var(--primary-margin);
   text-align: center;
 }
 
@@ -333,7 +340,7 @@ header {
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-right: calc(-1 * var(--primary-margin));
 }
 .portfolio-img > li {
   display: flex;
@@ -341,7 +348,7 @@ header {
   flex-basis: calc((100% - 32px * var(--grid-item)) / var(--grid-item));
 }
 .portfolio-img > li:not(:nth-child(3n + 1)) {
-  margin-left: 30px;
+  margin-left: var(--primary-margin);
 }
 .cards-bottom {
   border: 1px solid rgba(238, 238, 238, 1);
@@ -363,5 +370,5 @@ header {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: var(--primary-margin);
 }
