@@ -16,19 +16,19 @@
 <body>
     <!-- Шапка сайта -->
     <header>
-        <div class="container header">
-            <nav>
+        <div class="container header">  
+            <nav class="nav">
                 <a href="./index.html" class="logo"><span class="active">Web</span>Studio</a>
             
-                <ul class="lists">
-                    <li><a href="./index.html" class="link-nav active">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
-                    <li><a href="" class="link-nav">Контакты</a></li>
+                <ul class="lists site-nav">
+                    <li class="lists-contacts"><a href="./index.html" class="link-nav active">Студия</a></li>
+                    <li class="lists-contacts"><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
+                    <li class="lists-contacts"><a href="" class="link-nav">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="lists">
-                <li><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a></li>
+            <ul class="lists contacts-nav">
+                <li class="lists-contacts"><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a></li>
+                <li class="lists-contacts"><a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a></li>
             </ul>
         </div>
         
@@ -45,26 +45,26 @@
         </section>
 
         <!-- особливості-->
-        <section class="section-features">
-           <div class="container">
+        <section class="section section-features">
+           <div class="container features">
                 <h2 hidden>Особливості</h2>
-                <ul class="lists">
-                    <li>
+                <ul class="lists features-ul">
+                    <li class="features-lists">
                         <h3 class="features-titles">Внимание к деталям</h3>
                         <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li>
+                    <li class="features-lists">
                         <h3 class="features-titles">Пунктуальность</h3>
                         <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
-                    <li>
+                    <li class="features-lists">
                         <h3 class="features-titles">Планирование</h3>
                         <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
-                    <li>
+                    <li class="features-lists">
                         <h3 class="features-titles">Современные технологии</h3>
                         <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
@@ -77,44 +77,44 @@
         <section class="section-works">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
-                <ul class="lists">
-                    <li> <img src="./image/img5.jpg" alt="чоловік набирає текст на клавіатурі" width="370">
+                <ul class="lists our-works">
+                    <li class="works-items"> <img src="./image/img5.jpg" alt="чоловік набирає текст на клавіатурі" width="370">
                     </li>
-                    <li> <img src="./image/img-6.jpg" alt="чоловік створює мобільний додаток" width="370">
+                    <li class="works-items"> <img src="./image/img-6.jpg" alt="чоловік створює мобільний додаток" width="370">
                     </li>
-                    <li> <img src="./image/img7.jpg" alt="планшет з кольоровим спектром" width="370">
+                    <li class="works-items"> <img src="./image/img7.jpg" alt="планшет з кольоровим спектром" width="370">
                     </li>
                 </ul>
             </div>
         </section>
 
         <!--наша команда -->
-        <section class="team">
+        <section class="team section">
             <div class="container">
                 <h2 class="title">Наша команада</h2>
-                <ul class="lists">
-                    <li>
+                <ul class="lists team-items">
+                    <li class="team-lists">
                         <section class="team-person">
                             <img src="./image/img.jpg" alt="молодий чоловік в бурдовій футболці" width="270">
                             <h3 class="titles-team">Игорь Демьяненко</h3>
                             <p lang="en" class="text">Product Designer</p>
                         </section>
                     </li>
-                    <li>
+                    <li class="team-lists">
                         <section class="team-person">
                             <img src="./image/img-2.jpg" alt="молода жінка зі світлим волоссям" width="270">
                             <h3 class="titles-team">Ольга Репина</h3>
                             <p lang="en" class="text">Frontend Developer</p>
                         </section>
                     </li>
-                    <li>
+                    <li class="team-lists">
                         <section class="team-person">
                             <img src="./image/img-3.jpg" alt="молодий чоловік в голубій сорочці" width="270">
                             <h3 class="titles-team">Николай Тарасов</h3>
                             <p lang="en" class="text">Marketing</p>
                         </section>
                     </li>
-                    <li>
+                    <li class="team-lists">
                         <section class="team-person">
                             <img src="./image/img-4.jpg" alt="молодий чоловік в чорній футболці" width="270">
                             <h3 class="titles-team">Михаил Ермаков</h3>
@@ -133,9 +133,11 @@
            <div class="container">
                 <a href="./index.html" class="logo"><span class="active">Web</span><span class="logo-footer">Studio</span></a>
                 <address>
-                    <span class="adress">г. Киев, пр-т Леси Украинки, 26 </span> <br>
-                    <a href="mailto:info@devstudio.com" class="link contacts-footer">info@devstudio.com</a> <br>
-                    <a href="tel:+380961111111" class="link contacts-footer">+38 096 111 11 11</a>
+                    <ul class="lists footer-lists">
+                        <li class="adress">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li><a href="mailto:info@devstudio.com" class="link contacts-footer">info@devstudio.com</a> </li>
+                        <li><a href="tel:+380961111111" class="link contacts-footer">+38 096 111 11 11</a> </li> 
+                    </ul>
                 </address>
            </div>
     </footer>
