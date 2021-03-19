@@ -60,7 +60,7 @@ img {
 }
 .section {
   padding-bottom: 94px;
-  padding-top: 94px;
+  /* padding-top: 94px; */
 }
 
 /* шапка */
@@ -69,7 +69,7 @@ img {
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ECECEC;;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   display: flex;
@@ -167,6 +167,9 @@ img {
 }
 
 /* особливості */
+.section-features {
+  padding-top: 94px;
+}
 .features-ul {
   display: flex;
 }
@@ -225,6 +228,7 @@ img {
 /* наша команда */
 .team {
   background-color: var(--ourteam-bgc-color);
+  padding-top: 94px;
 }
 .team-lists {
   display: flex;
@@ -289,6 +293,13 @@ img {
 /* portfolio */
 
 /* кнопки фільтрації */
+.filters-lists {
+  display: flex;
+  justify-content: center;
+}
+.filter-btn:not(:first-child) {
+  margin-left: 9px;
+}
 .button-portfolio {
   padding: 6px 22px;
 
@@ -303,22 +314,40 @@ img {
   display: inline-block;
 }
 .button-portfolio:hover,
-.button-portfolio:focus {
+.button-portfolio:focus,
+.current {
   color: var(--white-color);
   background-color: var(--active-color);
   cursor: pointer;
 }
-.current {
-  color: var(--white-color);
-  background-color: var(--active-color);
-}
+
 .section-btn-potfolio {
   margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 /* зображення */
 
-.project-images {
+.portfolio-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+.portfolio-img > li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 32px * var(--grid-item)) / var(--grid-item));
+}
+.portfolio-img > li:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+}
+.cards-bottom {
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-top: 1px solid rgba(238, 238, 238, 1);
+}
+.projects-titles {
   color: var(--titles-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -332,7 +361,8 @@ img {
   line-height: 1.88;
 }
 .cards-portfolio {
-  width: 370px;
-  height: 404px;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  margin-bottom: 30px;
 }
