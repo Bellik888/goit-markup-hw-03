@@ -64,12 +64,14 @@ img {
 }
 
 /* шапка */
+header {
+  border-bottom: 1px solid #ececec;
+}
 .header {
   display: flex;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
 .logo {
   display: flex;
@@ -342,10 +344,7 @@ img {
   margin-left: 30px;
 }
 .cards-bottom {
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
-  border-right: 1px solid rgba(238, 238, 238, 1);
-  border-left: 1px solid rgba(238, 238, 238, 1);
-  border-top: 1px solid rgba(238, 238, 238, 1);
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 .projects-titles {
   color: var(--titles-text-color);
