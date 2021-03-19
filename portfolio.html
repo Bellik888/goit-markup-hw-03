@@ -14,18 +14,19 @@
     <!-- Шапка сайта -->
     <header>
         <div class="container header">
-            <nav>
+            <nav class="nav">
                 <a href="./index.html" class="logo"><span class="active">Web</span>Studio</a>
     
-                <ul class="lists">
-                    <li><a href="./index.html" class="link-nav">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link-nav active">Портфолио</a></li>
-                    <li><a href="" class="link-nav">Контакты</a></li>
+                <ul class="lists site-nav">
+                    <li class="lists-contacts"><a href="./index.html" class="link-nav">Студия</a></li>
+                    <li class="lists-contacts"><a href="./portfolio.html" class="link-nav active">Портфолио</a></li>
+                    <li class="lists-contacts"><a href="" class="link-nav">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="lists">
-                <li><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a></li>
+            <ul class="lists contacts-nav">
+                <li class="lists-contacts"><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
+                </li>
+                <li class="lists-contacts"><a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a></li>
             </ul>
         </div>
     
@@ -37,14 +38,14 @@
             <h1 hidden> Portfolio</h1>
         <!--кнопки фільтрації-->
         <section class="section-btn-potfolio">
-            <div class="container ">
+            <div class="container">
                 <h2 hidden>Фільтри</h2>
-                <ul class="lists">
-                    <li><button class="button-portfolio current" type="button">Все</button></li>
-                    <li><button class="button-portfolio" type="button">Веб-сайти</button></li>
-                    <li><button class="button-portfolio" type="button">Приложения</button></li>
-                    <li><button class="button-portfolio" type="button">Дизайн</button></li>
-                    <li><button class="button-portfolio" type="button">Маркетинг</button></li>
+                <ul class="lists filters-lists">
+                    <li class="filter-btn"><button class="button-portfolio current" type="button">Все</button></li>
+                    <li class="filter-btn"><button class="button-portfolio" type="button">Веб-сайти</button></li>
+                    <li class="filter-btn"><button class="button-portfolio" type="button">Приложения</button></li>
+                    <li class="filter-btn"><button class="button-portfolio" type="button">Дизайн</button></li>
+                    <li class="filter-btn"><button class="button-portfolio" type="button">Маркетинг</button></li>
                 </ul>
             </div>
         </section>
@@ -52,15 +53,18 @@
         <!--зображення-->
         <section>
             <div class="container">
-                <section>
+                <section class="section">
                 <h2 hidden>Портфолио</h2>
-                <ul class="lists">
+                <ul class="lists portfolio-img">
                     <li>
                         <div class="cards-portfolio">
                             <a href="" class="link">
-                                <img src="./image/portfolio/img.jpg" width="370" height="294" alt="Технокряк">
-                                <h2 class="project-images">Технокряк</h2>
-                                <p class="projects-type">Веб-сайт</p>
+                                <img src="./image/portfolio/img.jpg"  alt="Технокряк">
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Технокряк</h2>
+                                    <p class="projects-type">Веб-сайт</p>
+                                </div>
+                                
                             </a>
                         </div>
                     </li>
@@ -68,8 +72,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-2.jpg" width="370" height="294" alt="Постер New Orlean vs Golden Star">
-                                <h2 class="project-images">Постер New Orlean vs Golden Star</h2>
-                                <p class="projects-type">Дизайн</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Постер New Orlean vs Golden Star</h2>
+                                    <p class="projects-type">Дизайн</p>
+                                </div>
+                                
                             </a>
                         </div>
                     </li>
@@ -77,8 +84,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-3.jpg" width="370" height="294" alt="Ресторан Seafood">
-                                <h2 class="project-images">Ресторан Seafood</h2>
-                                <p class="projects-type">Приложение</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Ресторан Seafood</h2>
+                                    <p class="projects-type">Приложение</p>
+                                </div>
+                                
                             </a>
                         </div>
                        
@@ -87,8 +97,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-4.jpg" width="370" height="294" alt="Проект Prime">
-                                <h2 class="project-images">Проект Prime</h2>
-                                <p class="projects-type">Маркетинг</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Проект Prime</h2>
+                                    <p class="projects-type">Маркетинг</p>
+                                </div>
+                                
                             </a>
                         </div>
                     </li>
@@ -96,8 +109,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-5.jpg" width="370" height="294" alt="Проект Boxes">
-                                <h2 class="project-images">Проект Boxes</h2>
-                                <p class="projects-type">Приложение</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Проект Boxes</h2>
+                                    <p class="projects-type">Приложение</p>
+                                </div>
+                                
                             </a>
                         </div>
                     </li>
@@ -105,8 +121,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-6.jpg" width="370" height="294" alt="Inspiration has no Borders">
-                                <h2 class="project-images">Inspiration has no Borders</h2>
-                                <p class="projects-type">Веб-сайт</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Inspiration has no Borders</h2>
+                                    <p class="projects-type">Веб-сайт</p>
+                                </div>
+                                
                             </a>
                         </div>
                        
@@ -115,8 +134,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-7.jpg" width="370" height="294" alt="Издание Limited Edition">
-                                <h2 class="project-images">Издание Limited Edition</h2>
-                                <p class="projects-type">Дизайн</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Издание Limited Edition</h2>
+                                    <p class="projects-type">Дизайн</p>
+                                </div>
+                                
                             </a>
                         </div>
                         
@@ -125,8 +147,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-8.jpg" width="370" height="294" alt="Проект LAB">
-                                <h2 class="project-images">Проект LAB</h2>
-                                <p class="projects-type">Маркетинг</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Проект LAB</h2>
+                                    <p class="projects-type">Маркетинг</p>
+                                </div>
+                                
                             </a>
                         </div>
                        
@@ -135,8 +160,11 @@
                         <div class="cards-portfolio">
                             <a href="" class="link">
                                 <img src="./image/portfolio/img-9.jpg" width="370" height="294" alt="Growing Business">
-                                <h2 class="project-images">Growing Business</h2>
-                                <p class="projects-type">Приложение</p>
+                                <div class="cards-bottom">
+                                    <h2 class="projects-titles">Growing Business</h2>
+                                    <p class="projects-type">Приложение</p>
+                                </div>
+                                
                             </a>
                         </div>
                        
@@ -153,9 +181,11 @@
         <div class="container">
             <a href="./index.html" class="logo"><span class="active">Web</span><span class="logo-footer">Studio</span></a>
             <address>
-                <span class="adress">г. Киев, пр-т Леси Украинки, 26 </span> <br>
-                <a href="mailto:info@devstudio.com" class="link contacts-footer">info@devstudio.com</a> <br>
-                <a href="tel:+380961111111" class="link contacts-footer">+38 096 111 11 11</a>
+                <ul class="lists footer-lists">
+                    <li class="adress">г. Киев, пр-т Леси Украинки, 26</li>
+                    <li><a href="mailto:info@devstudio.com" class="link contacts-footer">info@devstudio.com</a> </li>
+                    <li><a href="tel:+380961111111" class="link contacts-footer">+38 096 111 11 11</a> </li>
+                </ul>
             </address>
         </div>
     </footer>
