@@ -71,8 +71,6 @@ header {
 .header {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .logo {
   display: flex;
@@ -80,8 +78,6 @@ header {
   text-decoration: none;
   color: var(--titles-text-color);
 
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -180,17 +176,14 @@ header {
 }
 .features-ul {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-right: calc(-1 * var(--primary-margin));
 }
 .features-lists {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-  margin-left: 30px;
   --grid-item: 4;
 }
 
-.features-lists {
+.features-lists:not(:first-child) {
   margin-left: var(--primary-margin);
 }
 
@@ -297,6 +290,9 @@ header {
   font-size: 14px;
   line-height: 1.71;
 }
+.footer-lists {
+  margin-top: 20px;
+}
 .contacts-footer {
   font-style: normal;
   font-weight: 400;
@@ -359,15 +355,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+}
+.portfolio-img > li:nth-child(n + 4) {
   margin-top: 30px;
 }
 .portfolio-img > li:not(:nth-child(3n + 1)) {
   margin-left: var(--primary-margin);
 }
 .cards-bottom {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
