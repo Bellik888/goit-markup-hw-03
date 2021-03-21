@@ -253,6 +253,9 @@ header {
 .team-text {
   padding-top: var(--primary-margin);
   padding-bottom: var(--primary-margin);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .titles-team {
   color: var(--titles-text-color);
@@ -325,6 +328,7 @@ header {
   color: var(--titles-text-color);
   background-color: var(--ourteam-bgc-color);
   border-radius: 4px;
+  border: transparent;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
